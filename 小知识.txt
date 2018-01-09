@@ -1,0 +1,31 @@
+1.给非a标签添加超链接  <button onclick="window.location.href='index.html'" class="btn btn-info btn-round-ss">再次购买</button>
+
+2.返回前一页：HTML部分：<div id="back">    </div>
+
+		JS部分：<script>
+   				 var goBack = document.getElementById('back');
+    					goBack.onclick = function(){
+
+    					  window.history.back(-1); 
+    				}
+ 		     </script>
+
+3.清空所有input      $("input").val("")
+
+4.Transform 属性：动作：translate(10px,10px) 
+		   旋转：Rotate(90deg)
+		   中心点：transform-origin:0 0;  
+ 		   缩放：scale(0.5,0.5) 
+	           斜切：skew（50deg,20deg）
+	
+ transition属性: property:检索或设置对象中的参与过渡的属性
+		 duration:过渡动画的持续时间
+		 timing-function:检索或设置对象中过渡的动画类型
+		（liner,ease,ease-in,ease-out,ease-in-out）
+		 delay:检索或设置对象延迟过渡的时间
+
+eg:{transition:all 2s  ease-in 1s;transform:translate(100px);background:#f00}
+
+eg{transition:transform 2s;transform:translate(100px)}
+
+		
